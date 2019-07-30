@@ -39,3 +39,11 @@ h2{
   top:80px;
   right:0;
 }
+
+#welcomeText::first-letter{
+  font-weight: bold;
+  color: #DBCA69;
+  font-size: 600%;
+  margin: auto;
+}
+}
