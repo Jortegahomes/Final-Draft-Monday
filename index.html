@@ -1,109 +1,150 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <!-- required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<!-- Bootstrap CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-<script src="main.js"></script>
-<link rel="stylesheet" type="text/css" href="style.css">
-<title>Jorge Ortega</title>
-</head>
-
-<body>
-  <!--NAVBAR -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#"><img src ="NavBarLogo.png" width="90" height="90">
-  </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-lable="Toggle navigation">
+<html>
+  <head>
+    <title>Jorge Ortega</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--Links to BootStrap and Fonts-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Abhaya+Libre&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/style.css">
+  </head>
+  <body>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <a class="navbar-brand" href="#">Jorge Ortega</a> <!--Brand Image goes here. -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
-    </button>
-
-  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-        <li class="nav-item active">
-        <a class="nav-link" href="#">Who Am I? <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Resume & Projects</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Social</a>
-        </li>
-
-    </ul>
-    <form class ="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
-    </div>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-4">
+          <li class="nav-item">
+            <a class="nav-link" data-value="About" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" data-value="Portfolio" href="#b2b">Portfolio</a>
+            </li>
+          <li class="nav-item">
+              <a class="nav-link" data-value="The Team" href="#team">The Team</a>
+            </li>
+          <li class="nav-item">
+              <a class="nav-link" data-value="Contact Me" href="#contact">Contact Me</a>
+            </li>
+        </ul>
+      </div>
     </nav>
-<!-- landing image and text -->
-  <!--<div class="container jumbotron">
-    <div class="row">
-      <div class="col-sm-6">
-        <img src="media/IMG_0100.png"  style="width:100%; height:100%"/>
-      </div>
-      <div class="col-sm-6">
-        <p>Second of two cols</p>
-      </div>
-    </div>
-  </div> -->
-  <div class="header-container">
-    <div class="videito-container">
-      <video preload="true" autoplay ="autoplay" loop="loop" volume="0">
-        <source src="officeVideo.mp4" type="video/mp4">
-        <source src="officeVideo.mp4" type="video/webm">
-        <source src="officeVideo.mp4" type="video/ogg">
+    <!--Video Header-->
+    <header>
+      <video container-flex autoplay muted loop id="myVideo">
+        <source src="https://interactive-examples.mdn.mozilla.net/media/examples/flower.webm" type="video/mp4">
       </video>
-    </div>
-  </div>
-  <!-- image and welcome page -->
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-sm-6">
-        <img src="IMG_0590.jpg" class="img-fluid" alt="Responsive Image">
+      <div class="description">
+        <h1>Welcome to My Portfolio!</h1>
+        <h5>CULTIVATING CODER LOOKING TO FIND A PLACE TO TAKE ROOT, PRODUCE AND BE A CODING NINJA!!
+        </h5>
       </div>
-      <div class="col-sm-6 m-auto p-auto">
-        <p class="p-3 mb-2 bg-primary text-white" id="welcomeText">Welcome to My page! Please take a look around and let me know of any questions or concerns you may have!</p>
+      
+
+    </header>
+    <!--About-->
+    <div class="about" id="about">
+        <div class="container">
+          <h1 class="text-center">About Me!</h1>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <img src="/Media/team-3 copy.jpg" class="img-fluid">
+                    <span class="text-justify">Student @ Cultivating Coders</span>
+                </div>
+                <div class="col-lg-8 col-md-8 col-sm-12 desc">
+                  
+                    <h3>J.ORTEGA</h3>
+                    <p>
+                        I'm actively learning both front and back end web development at Cultivating Coders. 
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Portfolio-->
+    <div class="background-image" id="b2b">
+    <div class="portfolio">
+        <h1 class="text-center">Portfolio</h1>
+    <div class="container">
+     <div class="row">
+      <div class="col-lg-4 col-md-4 col-sm-12">
+       <img src="/Screen Shot 2019-09-09 at 1.27.30 PM.png" class="img-fluid">
       </div>
+      <div class="col-lg-4 col-md-4 col-sm-12">
+       <img src="/Screen Shot 2019-09-09 at 1.29.31 PM.png" class="img-fluid">
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-12">
+       <img src="/Screen Shot 2019-09-09 at 1.30.31 PM.png" class="img-fluid">
+      </div>
+     </div>
     </div>
-
-  </div>
-  <!-- MY LIFE, MY WORK -->
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-4">
-      <img src="IMG_2038.jpg" class="img-fluid" alt="Responsive image"<p> My Work </p>
+   </div>
+   <!--Team-->
+    <!-- Team section -->
+<div class="team" id="team">
+    <div class="container">
+       <h1 class="text-center">Our Team</h1>
+     <div class="row">
+      <div class="col-lg-3 col-md-3 col-sm-12 item">
+       <img src="Media/team-3 copy.jpg" class="img-fluid" alt="team">
+       <div class="des">
+         Jorge O.
+        </div>
+       <span class="text-muted">Web Developer</span>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-12 item">
+       <img src="Media/daniel.jpg" class="img-fluid" alt="team">
+       <div class="des">
+          Daniel J. 
+        </div>
+       <span class="text-muted">Web Developer</span>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-12 item">
+       <img src="Media/ccl.jpg" class="img-fluid" alt="team">
+       <div class="des">
+         Cultivaing Coders 
+        </div>
+       <span class="text-muted">Coding BootCamp</span>
+      </div>
+     </div>
     </div>
-      <div class="col-sm-4">
-      <img src="20180421_213906.jpg" class="img-fluid" alt="Responsive image"<p>My Life</p>
+  </div>
+    <!-- Contact form -->
+<div class="contact-form" id="contact">
+    <div class="container">
+     <form>
+      <div class="row">
+       <div class="col-lg-4 col-md-4 col-sm-12">
+         <h1>Get in Touch</h1> 
+       </div>
+       <div class="col-lg-8 col-md-8 col-sm-12 right">
+          <div class="form-group">
+            <input type="text" class="form-control form-control-lg" placeholder="Your Name" name="">
+          </div>
+          <div class="form-group">
+            <input type="email" class="form-control form-control-lg" placeholder="YourEmail@email.com" name="email">
+          </div>
+          <div class="form-group">
+            <textarea class="form-control form-control-lg">
+             
+            </textarea>
+          </div>
+          <input type="submit" class="btn btn-secondary btn-block" value="Send" name="">
+       </div>
+      </div>
+     </form>
     </div>
-      <div class=col-sm-4>
-      <img src="IMG_2039.jpg" class="img-fluid" alt="Responsive image"<p>My Resume</p>
-    </div>
-  </div>
-</div>
-<!--contact me! -->
-<form class="contact-form d-flex flex-column align-items-center"
-    action="#"
-    method="POST">
-
-  <div class ="form-group w-75">
-    <input type="name" class="form-control" placeholder="Name" name="name" required/>
-  </div>
-  <div class="form-group w-75">
-    <input type="email" class="form-control" placeholder="Email" name="name" required/>
-  </div>
-  <div class="form-group w-75">
-    <textarea class="form-control" type="text" placeholder="Hello" rows=7 name="name" required/>
-    </textarea>
-  <button type="submit" class="btn btn-submit btn-info w-75">Submit</button>
-  </div>
-</form>
-  <!-- Embeded IG -->
-<div id="pixlee_container"></div><script type="text/javascript">window.PixleeAsyncInit = function() {Pixlee.init({apiKey:'d6836UaUv6qOsOGzVFux'});Pixlee.addSimpleWidget({widgetId:'20171'});};</script><script src="//instafeed.assets.pixlee.com/assets/pixlee_widget_1_0_0.js"></script>
-
-</body>
+   </div>
+    <!--Donate-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="/main.js"></script>
+  </body>
 </html>
+
